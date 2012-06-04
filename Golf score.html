@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>  
+  <head>
+    <title>Golf score keeper</title>
+    <script src="http://www.google.com/jsapi"></script>
+    <script>
+      google.load("jquery", "1.4.1");
+    </script>
+  </head>
+  <body>
+    <form action="upload.html" method="get">
+      <div>
+        <label for="1">Hole 1</label>
+        <input type="number" min="1" value="4" name="1" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 2</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 3</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 4</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 5</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 6</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 7</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 8</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 9</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 10</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 11</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 12</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 13</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 14</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 15</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 16</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 17</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 18</label>
+        <input type="number" min="1" value="4" name="2" size="2" step="1" />
+      </div>
+      <div>
+        <input type="email" placeholder="Enter your email address" size="40"/>
+      </div>
+         <div>
+        <input type="text" id="lat_field" name="latitude" placeholder="Enter First Name" />
+        <input type="text" id="long_field" name="longitude" placeholder="Enter Last Name" />
+      </div>
+      <script>
+        navigator.geolocation.getCurrentPosition(
+          function(pos) {
+            $("#lat_field").val(pos.coords.latitude);
+            $("#long_field").val(pos.coords.longitude);
+          }
+        );
+      </script>
+      <div>
+        <input type="submit" value="Upload Score" />
+      </div>
+    </form>
+  </body>
+</html> 
